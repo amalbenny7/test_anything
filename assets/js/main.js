@@ -189,43 +189,23 @@
 
 })(jQuery);
 //carosel
-document.addEventListener("DOMContentLoaded", function() {
-    const carousels = document.querySelectorAll('.custom-carousel');
-
-    carousels.forEach(carousel => {
-        const slidesContainer = carousel.querySelector('.carousel-slides');
-        let currentIndex = 0;
-        const slidesCount = slidesContainer.children.length;
-        const slideWidth = slidesContainer.children[0].clientWidth;
-        let interval = null;
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slidesCount;
-            slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        }
-
-        function startSlideshow() {
-            interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
-        }
-
-        function stopSlideshow() {
-            clearInterval(interval);
-        }
-
-        // Start the slideshow
-        startSlideshow();
-
-        // Optional: Stop the slideshow when the tab/window is not visible
-        document.addEventListener('visibilitychange', function() {
-            if (document.visibilityState === 'visible') {
-                startSlideshow();
-            } else {
-                stopSlideshow();
-            }
-        });
-
-        // Optional: Cleanup on unloading the page
-        window.addEventListener('unload', stopSlideshow);
-    });
-});
-
+document.addEventListener("DOMContentLoaded", function () {
+	const carousels = document.querySelectorAll(".custom-carousel");
+  
+	carousels.forEach((carousel) => {
+	  const track = carousel.querySelector(".carousel-track");
+	  const prevBtn = carousel.querySelector(".carousel-nav.prev");
+	  const nextBtn = carousel.querySelector(".carousel-nav.next");
+  
+	  const scrollAmount = 320; // 300px image + 20px gap
+  
+	  nextBtn.addEventListener("click", () => {
+		track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+	  });
+  
+	  prevBtn.addEventListener("click", () => {
+		track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+	  });
+	});
+  });
+  
