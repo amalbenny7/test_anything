@@ -4020,7 +4020,7 @@ input, select, textarea {
   .carousel-wrapper {
 	position: relative;
 	max-width: 720px;
-	margin: 10px auto !important;
+	margin: 60px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -4099,10 +4099,4 @@ input, select, textarea {
 	-webkit-tap-highlight-color: transparent;
 }
 
-/* ✅ Hide arrows on small screens */
-@media (max-width: 640px) {
-	.carousel-arrow {
-		display: none !important;
-	}
-}
   
