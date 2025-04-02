@@ -190,22 +190,54 @@
 })(jQuery);
 //carosel
 document.addEventListener("DOMContentLoaded", function () {
-	const carousels = document.querySelectorAll(".custom-carousel");
+	document.querySelectorAll(".carousel-wrapper").forEach(wrapper => {
+	  const slides = wrapper.querySelectorAll(".carousel-slide");
+	  const prevBtn = wrapper.querySelector(".carousel-arrow.prev");
+	  const nextBtn = wrapper.querySelector(".carousel-arrow.next");
   
-	carousels.forEach((carousel) => {
-	  const track = carousel.querySelector(".carousel-track");
-	  const prevBtn = carousel.querySelector(".carousel-nav.prev");
-	  const nextBtn = carousel.querySelector(".carousel-nav.next");
+	  let current = 0;
+	  let interval;
   
-	  const scrollAmount = 320; // 300px image + 20px gap
+	  const showSlide = (index) => {
+		slides.forEach((slide, i) => {
+		  slide.classList.toggle("active", i === index);
+		});
+	  };
+  
+	  const nextSlide = () => {
+		current = (current + 1) % slides.length;
+		showSlide(current);
+	  };
+  
+	  const prevSlide = () => {
+		current = (current - 1 + slides.length) % slides.length;
+		showSlide(current);
+	  };
+  
+	  const startAutoScroll = () => {
+		interval = setInterval(nextSlide, 5000); // 5 seconds
+	  };
+  
+	  const stopAutoScroll = () => {
+		clearInterval(interval);
+	  };
   
 	  nextBtn.addEventListener("click", () => {
-		track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+		stopAutoScroll();
+		nextSlide();
+		startAutoScroll();
 	  });
   
 	  prevBtn.addEventListener("click", () => {
-		track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+		stopAutoScroll();
+		prevSlide();
+		startAutoScroll();
 	  });
+  
+	  // Init
+	  showSlide(current);
+	  startAutoScroll();
 	});
   });
+  
   
