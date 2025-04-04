@@ -2530,54 +2530,6 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
-		/* ------------------- Style 1: Deep Ocean Blue ------------------- */
-		.wrapper.style1 {
-			background-color: #312450;
-		}
-		.wrapper.style1 .icon.major:before {
-			color: #5e42a6;
-		}
-
-		/* ------------------- Style 2: Deep Ocean Night ------------------- */
-		.wrapper.style2 {
-			background-color: #263238;
-		}
-		.wrapper.style2 .icon.major:before {
-			color: #493382;
-		}
-
-		/* ------------------- Style 5: Rosy Plum ------------------- */
-		.wrapper.style5 {
-			background-color: #B74E91;
-		}
-		.wrapper.style5 .icon.major:before {
-			color: #b74e91;
-		}
-
-		/* ------------------- Style 6: Deep Rosy Plum ------------------- */
-		.wrapper.style6 {
-			background-color: #953D75;
-		}
-		.wrapper.style6 .icon.major:before {
-			color: #953d75;
-		}
-
-		/* ------------------- Style 7: Sleek Silver ------------------- */
-		.wrapper.style7 {
-			background-color: #B0BEC5;
-		}
-		.wrapper.style7 .icon.major:before {
-			color: #4B4B4B;
-		}
-		/* ------------------- Style Test: White ------------------- */
-		.wrapper.styletest {
-			background-color: #4C566A;
-		}
-		.wrapper.styletest .icon.major:before {
-			color: #4C566A;
-		}
-
-
 
 
 
@@ -3256,29 +3208,30 @@ input, select, textarea {
 				}
 
 			}
-			.wrapper.style1 {
-				background-color: #f5f5f5; /* Light Grey */
+			.wrapper.style1 { 
+				background-color: #fdfdfd; /* Whisper Grey */
 			}
 			
 			.wrapper.style1-alt {
-				background-color: #e0e0e0; /* Slightly deeper grey */
+				background-color: #f8f8f8; /* Faint Grey Tint */
 			}
 			
 			.wrapper.style2 {
-				background-color: #fdf6e3; /* Warm Beige */
+				background-color: #fefcf7; /* Almost White Beige */
 			}
 			
 			.wrapper.style2-alt {
-				background-color: #f4ecd8; /* Deeper beige */
+				background-color: #fcf8ee; /* Faint Warm Neutral */
 			}
 			
 			.wrapper.style3 {
-				background-color: #fce8e6; /* Soft Blush */
+				background-color: #fef8f7; /* Barely-there Blush */
 			}
 			
 			.wrapper.style3-alt {
-				background-color: #f9d9d6; /* Slightly richer blush */
+				background-color: #fdf3f2; /* Subtle Blush Hue */
 			}
+			
 			
 		.wrapper.fullscreen {
 			display: -moz-flex;
