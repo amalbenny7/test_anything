@@ -4105,4 +4105,20 @@ input, select, textarea {
 	visibility: visible;
 	opacity: 1;
   }
+
+/* galafru image */
+.responsive-image {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 1em;
+  }
+  
+  .responsive-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	object-fit: cover;
+  }
   
