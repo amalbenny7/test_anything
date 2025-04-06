@@ -4110,3 +4110,29 @@ input, select, textarea {
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* logo background box */
+#sidebar .logo-wrapper {
+	background-color: #e6eff7;
+	padding: 10px 0;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  #sidebar .logo-link {
+	display: block;
+	width: 100%;
+  }
+  
+  #sidebar .logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+	height: auto;
+  }
+  @media screen and (max-width: 768px) {
+	#sidebar .logo-wrapper {
+	  display: none;
+	}
+  }
+	
