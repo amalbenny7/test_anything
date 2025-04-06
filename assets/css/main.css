@@ -4068,4 +4068,41 @@ input, select, textarea {
 	display: block;
 	object-fit: cover;
   }
+
+  /* socials */
+  .icon-label {
+	color: #23012B !important;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	transition: none !important;
+  }
+  
+  .icon-label i {
+	font-size: 1.5em;
+	transition: none !important;
+  }
+  
+  .icon-label span {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	background: #fff;
+	color: #23012B;
+	font-weight: 500;
+	padding: 4px 8px;
+	border-radius: 5px;
+	transition: opacity 0.2s ease-in-out;
+	z-index: 10;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .icon-label:hover span {
+	visibility: visible;
+	opacity: 1;
+  }
   
