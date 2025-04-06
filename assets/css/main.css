@@ -3208,30 +3208,19 @@ input, select, textarea {
 				}
 
 			}
-			.wrapper.style1 { 
-				background-color: #fdfdfd; /* Whisper Grey */
-			}
-			
-			.wrapper.style1-alt {
-				background-color: #f8f8f8; /* Faint Grey Tint */
-			}
-			
+
 			.wrapper.style2 {
-				background-color: #fefcf7; /* Almost White Beige */
+				background-color: #f4f8fc; /* Pale Mist Blue */
 			}
 			
 			.wrapper.style2-alt {
-				background-color: #fcf8ee; /* Faint Warm Neutral */
+				background-color: #e6eff7; /* Softened Mid Mist Blue */
 			}
+			
 			
 			.wrapper.style3 {
-				background-color: #fef8f7; /* Barely-there Blush */
-			}
-			
-			.wrapper.style3-alt {
-				background-color: #fdf3f2; /* Subtle Blush Hue */
-			}
-			
+				background-color: #dfeaf5; 
+			}			
 			
 		.wrapper.fullscreen {
 			display: -moz-flex;
