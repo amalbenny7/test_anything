@@ -239,16 +239,3 @@ document.addEventListener("DOMContentLoaded", function () {
 	  startAutoScroll();
 	});
   });
-  function validateForm(form) {
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (!name || !email || !message) {
-      alert("Please fill in all fields before submitting.");
-      return false;
-    }
-
-    return true;
-  }  
-  
